@@ -1,5 +1,7 @@
 # ili9488-linux-6.1
 
+Model: **LiangHaocai LHC3540-IPS**
+
 <img src="https://github.com/mtojek/ili9488-linux-6.1/raw/main/misc/photos/3.jpeg" width="300"/>
 
 ## Pinout
