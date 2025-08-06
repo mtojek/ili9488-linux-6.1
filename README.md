@@ -4,6 +4,34 @@
 
 Limitation: Do not link screen's MISO and touch's DOUT lines together, as XPT2046 can't support it (X = 0, Y = 0). Unfortunately, you need to use separate SPI buses.
 
+## Driver
+
+Based on OrangePi Zero 2W driver, Kernel version: `6.1.31-sun50iw9 #1.0.4`
+
+```bash
+git clone https://github.com/orangepi-xunlong/linux-orangepi/
+./build.sh docker
+```
+
+Then, copy over driver files from this repo, and:
+
+```
+./build.sh docker
+```
+
+Kernel deps will be in `output/debs`:
+
+```bash
+$ ls -l output/debs/
+total 48612
+drwxrwsr-x 2 root docker     4096 Aug  3 08:18 extra
+-rw-r--r-- 1 root docker    15092 Aug  6 19:07 linux-dtb-next-sun50iw9_1.0.4_arm64.deb
+-rw-r--r-- 1 root docker 12461512 Aug  6 19:07 linux-headers-next-sun50iw9_1.0.4_arm64.deb
+-rw-r--r-- 1 root docker 36035344 Aug  6 19:07 linux-image-next-sun50iw9_1.0.4_arm64.deb
+-rw-r--r-- 1 root docker  1250676 Aug  6 19:07 linux-libc-dev_1.0.4_arm64.deb
+drwxrwsr-x 2 root docker     4096 Aug  3 08:18 u-boot
+```
+
 ## DTS
 
 ```bash
