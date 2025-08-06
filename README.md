@@ -1,5 +1,7 @@
 # ili9488-linux-6.1
 
+<img src="https://github.com/mtojek/ili9488-linux-6.1/raw/main/misc/photos/3.jpeg" width="300"/>
+
 ## Pinout
 
 Limitation: Do not link screen's MISO and touch's DOUT lines together, as XPT2046 can't support it (X = 0, Y = 0). Unfortunately, you need to use separate SPI buses.
@@ -50,3 +52,13 @@ python3 mipi-dbi-cmd.py panel-mipi-dbi-spi.bin panel-mipi-dbi-spi.txt
 sudo cp panel-mipi-dbi-spi.bin /lib/firmware/
 sudo update-initramfs -u
 ```
+
+## Photos
+
+<p float="left">
+  <img src="https://github.com/mtojek/ili9488-linux-6.1/raw/main/misc/photos/1.jpeg" width="300"/>
+  <img src="https://github.com/mtojek/ili9488-linux-6.1/raw/main/misc/photos/2.jpeg" width="300"/>
+  <img src="https://github.com/mtojek/ili9488-linux-6.1/raw/main/misc/photos/3.jpeg" width="300"/>
+  <img src="https://github.com/mtojek/ili9488-linux-6.1/raw/main/misc/photos/4.jpeg" width="300"/>
+  <img src="https://github.com/mtojek/ili9488-linux-6.1/raw/main/misc/photos/5.jpeg" width="300"/>
+</p>
