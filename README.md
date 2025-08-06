@@ -1,6 +1,4 @@
-# ili9488-linux-6.1
-
-Model: **LiangHaoCai LHC3540-IPS**
+# ili9488-linux-6.1 | LiangHaoCai LHC3540-IPS
 
 Tested on: OrangePi Zero 2W, kernel 6.1.31 
 
